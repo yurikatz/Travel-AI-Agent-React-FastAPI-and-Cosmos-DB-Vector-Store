@@ -84,6 +84,6 @@ jobs:
         id: deploy-to-webapp
         with:
           app-name: 'yk-agent-api-test'
-          package: api
+          #package: api
 	  #slot-name: 'Production'
          
