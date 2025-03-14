@@ -60,7 +60,7 @@ jobs:
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     permissions:
       id-token: write #This is required for requesting the JWT
-	contents: read #This is required for actions/checkout
+      contents: read #This is required for actions/checkout
 
     steps:
       - name: Download artifact from build job
@@ -85,5 +85,5 @@ jobs:
         with:
           app-name: 'yk-agent-api-test'
           package: api
-	   slot-name: 'Production'
+	  #slot-name: 'Production'
          
